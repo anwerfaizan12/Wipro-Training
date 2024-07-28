@@ -15,7 +15,7 @@ public class Programm_10 {
 		}
 		str = str.trim();
 		
-		Set<Character> set = new HashSet<>();
+		HashSet<Character> set = new HashSet<>();
 		char res = ' ';
 		
 		for(int i=0;i<str.length();i++) {

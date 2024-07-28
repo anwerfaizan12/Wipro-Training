@@ -1,8 +1,7 @@
 package day_04;
 
 import java.util.Scanner;
-import java.util.Set;
-import java.util.LinkedHashSet;
+import java.util.HashSet;
 
 public class Programm_04 {
 	public static void main(String[] args) {
@@ -15,7 +14,7 @@ public class Programm_04 {
 		}
 		str = str.trim();
 		
-		Set<Character> set = new LinkedHashSet<Character>();
+		HashSet<Character> set = new HashSet<Character>();
 		StringBuilder res = new StringBuilder("");
 		
 		
