@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class CreateDatabase {
+public class Create_database {
     public static void main(String[] args) {
         try {
             // Step 1- register the driver
