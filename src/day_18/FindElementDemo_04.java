@@ -1,11 +1,14 @@
 package day_18;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class Prg_01 {
+public class FindElementDemo_04 {
    public static void main(String[] args) throws InterruptedException {
 	   System.getProperty("webdriver.chrome.driver","C:\\Users\\Administrator\\Downloads\\chromedriver-win64\\chromedriver-win64");
 	
@@ -30,8 +33,22 @@ public class Prg_01 {
 		  driver.findElement(By.id("txtLastName")).sendKeys("Anwer");
 		  Thread.sleep(1000);
 		  
-		  driver.findElement(By.id("rbMale")).click();
-		  Thread.sleep(1000);
+//		  driver.findElement(By.id("rbMale")).click();
+//		  Thread.sleep(1000);
+		  
+		  List<WebElement> radioElem = driver.findElements(By.name("gender"));
+		  for(WebElement webElement : radioElem) {
+			  String radioSelection = webElement.getAttribute("value").toString();
+			  if(radioSelection.equals("Male")) {
+				  webElement.click();
+			  }
+			  try {
+				  Thread.sleep(500);
+			  }
+			  catch(InterruptedException ex) {
+				  System.out.println(ex.getMessage());
+			  }
+		  }
 		  
 		  driver.findElement(By.name("DtOB")).sendKeys("18/04/1998");
 		  Thread.sleep(1000);
@@ -51,8 +68,22 @@ public class Prg_01 {
 		  Thread.sleep(1000);
 		  
 
-		  driver.findElement(By.cssSelector("input[value=Reading]")).click();
-		  Thread.sleep(1000);
+//		  driver.findElement(By.cssSelector("input[value=Reading]")).click();
+//		  Thread.sleep(1000);
+		  
+		  List<WebElement> checkElem = driver.findElements(By.name("chkHobbies"));
+		  for(WebElement webElement : checkElem) {
+			  String checkSelection = webElement.getAttribute("value").toString();
+			  if(checkSelection.equals("Reading")) {
+				  webElement.click();
+			  }
+			  try {
+				  Thread.sleep(500);
+			  }
+			  catch(InterruptedException ex) {
+				  System.out.println(ex.getMessage());
+			  }
+		  }
 		  
 
 		  driver.findElement(By.name("submit")).click();
