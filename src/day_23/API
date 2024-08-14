@@ -1,0 +1,75 @@
+(1). Explain types of API with examples.
+
+Public API - 
+Public APIs are published publicaly and that can be used by anyone(any third party user).
+
+ characteristics - 
+ 1. publicaly available without any access restriction.
+ 2. Used to communicate beyond the boundries of the company.
+ 3. No need to necessarily have a business relationship with them.
+ 
+ example - Social media boats, third party login e-commerce transactions and weather apps.
+ 
+ 
+ Private API - 
+ Private APIs are developed by own company to enhance the own products and services.
+ 
+ Characteristics - 
+ 1. Less common.
+ 2. Exposed only to the internal systems.
+ 3. Used across internal development teams within the company.
+ 
+ example - One example of Private API is Home-Cost, a home building cost calculator.
+ 
+ 
+ Partner API - 
+ Partner APIs are used by specific partners with whom the company agrees to share data.
+ 
+ Characteristics -
+ 1. Are exposed to selected business partners.
+ Used for communication between a company and it's business partners.
+ 
+ example - Airbnb Partner API, eBay APIs, Skyscanner travel API
+ 
+ 
+ 
+ (2) Why we need API 
+ 
+ 1. The rate of code development is faster and the same API can service more requests without any major code
+ or infrastructural changes.
+ 
+ 2. It helps you to embed contents from any site or application more efficiently.
+ 
+ 3. APIs has much more strong discipline for security and governances.
+ 
+ 4.APIs are more standardized, they can be monitored and managed for both performance and scale.
+ 
+ 5. Simple,flexible, quickly adopted.
+ 
+ examples - 
+  APIs are used to deliver material by streaming services such as Spotify and Netflix.
+  
+  APIs are used by automakers such as tesla to provide software upgrades.
+  
+  
+  (3) - Explain types of web services 
+  
+  SOAP web service 
+  1. SOAP stands for Simple Object Access Protocol.
+  2. A format for sending and receiving messages.
+  3. SOAP is platform independent.
+  4. Originally developed by Microsoft.
+  5. The best way to communicate between application is over HTTP.
+  6. SOAP provides a way to communicate between applicatiopn running on different operating systems, with
+  different technologies and programming languages.
+  
+  REST web service 
+  1. REST stands for REpresentational State Transfer.
+  2. Relies on stateless communication protocol most commonly,HTTP.
+  3. REST structures data in XML,YAML, or any other format that is machine-readable.
+  4. Usually JSON is the most widely used format.
+  
+  
+  (4) What is API endpoint and give 2 sample API endpoints
+  
+  
