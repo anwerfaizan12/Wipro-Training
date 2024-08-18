@@ -71,5 +71,58 @@ Public APIs are published publicaly and that can be used by anyone(any third par
   
   
   (4) What is API endpoint and give 2 sample API endpoints
-  
-  
+  An API endpoint is a digital location where an API receives requests about a specific resource on it's server.
+  In APIs, an endpoint is  typically a uniform resource locator(URL) that provides the location of a server on
+   on the server.
+   
+   
+   
+   (5) 
+   
+   1. 500 Internal server error
+   
+   example - you are trying to purchase an item online , but when you click "Checkout", you see 
+   a message saying "500 Internal server Error.This could happen if server hosting the e-commerce 
+   site experiences an unexpected error due to a misconfiguration or an issue with the payment
+   processing system.
+   
+   
+   2. 501 Not Implemented
+   
+   example - Suppose a client tries to make a request using a method not supported by the server, such as using 
+   'PATCH' instead of 'POST' to update data. The server responds with a 501 status code because it does not 
+   support 'PATCH'.
+   
+   3. 502 Bad Gateway
+   
+   example - You are using an app that relies on multiple services(i.e a weather app pulling
+   data from various APIs). If one of those services is down or sends an invalid response,
+   the app might show a '502 Bad Gateway' error.
+   
+   4. 503 Service Unavailable
+   
+   example - During a flash sale, a popular e-commerce site may experience a surge in traffic,
+   overwhelming the servers. Users trying to access the site might encountering a '503 Service Unavailable'
+    error.
+    
+    
+    5. 504 Gateway Timeout
+    
+    example - If you are trying to load a webpage that relies on a slow or unresponsive API,
+    the server might time out waiting for the API response and return a '504 Gateway Timeout' error.
+    
+    
+    6. 505 HTTP Version Not Supported
+    
+    example - A legacy client sends a request using an outdated HTTP protocol version(e.g, HTTP/1.0) to a modern 
+    server that only supports HTTP/1 HTTp/2. The server would respond with a '505 HTTP Version
+     Not Supported' error.
+   
+   
+   
+   
+   
+   
+   
+   
+   
