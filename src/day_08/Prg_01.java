@@ -7,6 +7,7 @@ import java.util.*;
 
 
 
+
 class Mesaage implements java.io.Serializable{
 	
 private String senderName;
@@ -71,8 +72,8 @@ public class Prg_01 {
 	 msg.add(new Message("Pooja","Mariya",LocalDateTime.now(),"Live in Delhi!"));
 	 msg.add(new Message("Aleena","Divya",LocalDateTime.now(),"What to do!"));
 	 
-	 try{FileOutputStream file = new FileOutputStream("C:\\Users\\Administrator\\eclipse-workspace\\faizan_anwer");
-			 ObjectOutputStream obj = new ObjectOutputStream(file);
+	 try(FileOutputStream file = new FileOutputStream("C:\\Users\\Administrator\\eclipse-workspace\\faizan_anwer");
+			 ObjectOutputStream obj = new ObjectOutputStream(file)){
 			 obj.writeObject(msg);
 			 System.out.println("Serialization is done now");
 			 }catch(Exception e) {
