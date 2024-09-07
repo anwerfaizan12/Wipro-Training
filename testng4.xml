@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test Suite">
+  <test name="Test with Parameters">
+    <parameter name="UserName" value="TestUser"/>
+    <parameter name="Password" value="TestPassword"/>
+    <classes>
+      <class name="day_21.Invoc_optional"/>
+    </classes>
+  </test>
+</suite>
